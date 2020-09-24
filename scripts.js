@@ -29,4 +29,31 @@ function calculateTip() {
     }
 }
 
+//can optimize these functions, but don't remember how to let program gather click variable info
+function addOneB(){
+    billInput.value++;
+    calculateTip()
+}
+function addOneT(){
+    tipInput.value++;
+    calculateTip()
+}
+function addOneP(){
+    peopleInput.value++;
+    calculateTip()
+}
+
+function subOneB(){
+    billInput.value--;
+    calculateTip()
+}
+function subOneT(){
+    tipInput.value--;
+    calculateTip()
+}
+function subOneP(){
+    peopleInput.value--;
+    calculateTip()
+}
+
 calculateTip()
