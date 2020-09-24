@@ -10,7 +10,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%
 }
 
 section {
@@ -18,13 +17,24 @@ section {
     border-width: 5px;
 }
 
-div, input {
+div{
     margin: 0.5em;
 }
-div > input{
-    display: flex;
-    flex-direction: column;
+
+input {
+    margin: 0.25em 0 0 0;
 }
+
 label, input {
+    display: flex;
     font-size: 20px;
+}
+
+.sub {
+    margin-left: 143px;
+}
+
+button {
+    height: 29px;
+    width: 30px;
 }
