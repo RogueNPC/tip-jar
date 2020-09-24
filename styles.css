@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+section {
+    border-style: solid;
+    border-width: 5px;
+}
+
+div, input {
+    margin: 0.5em;
+}
+div > input{
+    display: flex;
+    flex-direction: column;
+}
+label, input {
+    font-size: 20px;
+}

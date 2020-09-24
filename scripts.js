@@ -15,9 +15,18 @@ function calculateTip() {
 
     const tipAmount = billValue * tipValue / 100 / numPeople
     const billAmount = tipAmount + billValue / numPeople
-
-    displayTip.innerHTML = tipAmount.toFixed(2)
-    displayTotal.innerHTML = billAmount.toFixed(2)
+    if (numPeople == 1){
+        displayTip.innerHTML = 'Tip: $' + tipAmount.toFixed(2)
+        displayTotal.innerHTML = 'Total: $' + billAmount.toFixed(2)
+    }
+    else if (numPeople > 1){
+        displayTip.innerHTML = 'Tip per person: $' + tipAmount.toFixed(2)
+        displayTotal.innerHTML = 'Total per person: $' + billAmount.toFixed(2)
+    }
+    else {
+        displayTip.innerHTML = 'Tip: ERROR'
+        displayTotal.innerHTML = 'Total: ERROR'
+    }
 }
 
 calculateTip()
